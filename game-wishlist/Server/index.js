@@ -7,7 +7,11 @@ const app = express()
 
 app.use(express.json())
 
-// set api pathes here
+// app.post('/api/games', gc.WishList)
+app.get('/api/games', gc.getAllGames)
+// app.delete('api/games/:id')
+app.put('api/games/:id')
+
 
 app.listen(SERVER_PORT, () => {
     console.log(`listening on port ${SERVER_PORT}`)

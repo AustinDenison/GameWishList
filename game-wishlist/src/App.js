@@ -1,14 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import axios from 'axios'
+import Search from './Components/Search'
+import FrontPage from './Components/FrontPage';
 
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component{
+  constructor(){
+    super()
+    this.state = {
+      
+    }
+  }
 
-    </div>
-  );
+  
+  render(){
+    return (
+      <div className='header'></div>,
+      <div className="App">
+        <Search />
+        <FrontPage />
+      </div>
+    );
+  }
 }
 
 export default App;
