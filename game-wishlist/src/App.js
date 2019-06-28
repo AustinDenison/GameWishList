@@ -1,24 +1,11 @@
-import React, {Component} from 'react';
-import './App.css';
-import axios from 'axios'
-import Search from './Components/Search'
-import FrontPage from './Components/FrontPage';
+import React, { Component } from "react";
+import "./App.css";
+import FrontPage from "./Components/FrontPage";
 
-
-class App extends Component{
-  constructor(){
-    super()
-    this.state = {
-      
-    }
-  }
-
-  
-  render(){
+class App extends Component {
+  render() {
     return (
-      <div className='header'></div>,
       <div className="App">
-        <Search />
         <FrontPage />
       </div>
     );

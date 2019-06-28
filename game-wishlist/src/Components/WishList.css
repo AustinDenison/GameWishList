@@ -1,0 +1,13 @@
+.wishlist-container {
+    background: lightblue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wishlist {
+    font-size: 50px;  
+}

@@ -1,0 +1,37 @@
+.header {
+    width: 100vw;
+    height: 100px;
+    background: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .game-gallery {
+      font-size: 50px;
+  }
+
+  .btn-container {
+      width: 40vw;
+      height: 70px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+  }
+
+  .home-btn {
+    height: 50px;
+    font-size: 40px;
+    color:white;
+    background: transparent;
+    border: none;
+  }
+
+  .wishlist-btn {
+    height: 50px;
+    font-size: 40px;
+    color:white;
+    background: transparent;
+    border: none;
+  }

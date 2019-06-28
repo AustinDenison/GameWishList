@@ -1,14 +1,15 @@
-import React, {Component} from 'react'
+import React, { Component } from "react";
 
-
-class Search extends Component {
-    render(){
-        return(
-            <div>
-
-            </div>
-        )
-    }
+function Search(props){
+    return (
+      <div>
+        <input
+          onChange={e => props.handleChange(e)}
+          className="search-input"
+          placeholder="Search..."
+        />
+      </div>
+    );
 }
 
-export default Search
+export default Search;
