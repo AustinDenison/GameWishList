@@ -48,7 +48,6 @@ class FrontPage extends Component {
   };
 
   delete = game => {
-    console.log(game);
     axios.delete(`/api/games/${game.id}`).then(res => {
       this.setState({
         wishlist: res.data
@@ -80,7 +79,15 @@ class FrontPage extends Component {
             <h1 className="game-gallery">Game Gallery</h1>
             <div className="games-container">
               {filtered.map(game => {
-                return <Cards key={game.id} game={game} addTo={this.addTo} />;
+                return (
+                  <Cards
+                    key={game.id}
+                    game={game}
+                    addTo={this.addTo}
+                    handleSubmit={this.handleSubmit}
+                    handleChange2={this.handleChange2}
+                  />
+                );
               })}
             </div>
           </div>
