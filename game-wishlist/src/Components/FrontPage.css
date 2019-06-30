@@ -1,7 +1,7 @@
 .frontpage-cards-container {
     background: lightblue;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -9,10 +9,10 @@
 } 
 
 .games-container {
-    width: 100vw;
-    height: 90%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: flex-start;
 }

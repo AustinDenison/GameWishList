@@ -5,10 +5,10 @@ class WishList extends Component {
     const { title, logo, info, note } = this.props.game;
     return (
       <div className="cards">
-        {title}
+        <h2>{title}</h2>
         <img src={logo} alt="logo" />
-        {info}
-        {note}
+        <p>{info}</p>
+        <p>Note:{note}</p>
         <button onClick={() => this.props.delete(this.props.game)}>
           Remove from Wish List
         </button>
