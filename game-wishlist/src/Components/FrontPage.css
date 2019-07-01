@@ -1,7 +1,7 @@
 .frontpage-cards-container {
-    background: lightblue;
+    background: linear-gradient(#92BCEA, #1F487E ) ;
     width: 100vw;
-    height: 100%;
+    height: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,4 +15,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-start;
+}
+
+.game-gallery{
+    color: #883677;
 }

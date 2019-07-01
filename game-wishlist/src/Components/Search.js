@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import './Style.css'
 
 function Search(props){
     return (
@@ -7,6 +8,7 @@ function Search(props){
           onChange={e => props.handleChange(e)}
           className="search-input"
           placeholder="Search..."
+          value={props.value}
         />
       </div>
     );

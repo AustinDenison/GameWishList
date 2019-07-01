@@ -7,6 +7,7 @@ import "./WishList.css";
 import Header from "./Header";
 import Search from "./Search";
 
+
 class FrontPage extends Component {
   constructor() {
     super();
@@ -55,6 +56,12 @@ class FrontPage extends Component {
     });
   };
 
+  updateGames = games => {
+    this.setState({
+      games
+    })
+  }
+
   handleView(view) {
     this.setState({
       view: view
@@ -73,10 +80,10 @@ class FrontPage extends Component {
     return (
       <div className="frontpage-container">
         <Header handleView={this.handleView} />
-        <Search handleChange={this.handleChange} />
         {this.state.view === "Cards" ? (
           <div className="frontpage-cards-container">
             <h1 className="game-gallery">Game Gallery</h1>
+          <Search handleChange={this.handleChange} value={this.state.searched} />
             <div className="games-container">
               {filtered.map(game => {
                 return (
@@ -86,6 +93,7 @@ class FrontPage extends Component {
                     addTo={this.addTo}
                     handleSubmit={this.handleSubmit}
                     handleChange2={this.handleChange2}
+                    updateGames={this.updateGames}
                   />
                 );
               })}

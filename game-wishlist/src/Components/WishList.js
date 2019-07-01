@@ -6,10 +6,10 @@ class WishList extends Component {
     return (
       <div className="cards">
         <h2>{title}</h2>
-        <img src={logo} alt="logo" />
+        <img className='img' src={logo} alt="logo" />
         <p>{info}</p>
         <p>Note:{note}</p>
-        <button onClick={() => this.props.delete(this.props.game)}>
+        <button className='btn' onClick={() => this.props.delete(this.props.game)}>
           Remove from Wish List
         </button>
       </div>

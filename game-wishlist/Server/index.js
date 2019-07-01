@@ -10,8 +10,8 @@ app.use(express.json());
 app.post("/api/games", gc.addToWishList);
 app.get("/api/games", gc.getAllGames);
 app.delete("/api/games/:id", gc.deleteFromWishList);
-app.put("/api/games/:id");
+app.put("/api/games/:id", gc.addNote);
 
 app.listen(SERVER_PORT, () => {
-  console.log(`listening on port ${SERVER_PORT}`);
+  console.log(`listening on port ${SERVER_PORT}`); 
 }); 

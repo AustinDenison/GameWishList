@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import "./Header.css";
+import Logo from './GWL.png'
 
 function Header(props){
     return (
       <div className="header">
-        <h1 className='clever-logo'>Clever Logo</h1>
+        <img src={Logo} className='logo'/>
         <div className="btn-container">
           <button
             className="home-btn"
