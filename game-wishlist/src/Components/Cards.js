@@ -32,20 +32,25 @@ class Cards extends Component {
         <h2>{this.props.game.title}</h2>
         <img className="img" src={this.props.game.logo} alt="logo" />
         <p>{this.props.game.info}</p>
-        <p>Note:{this.props.game.note}</p>
-        <button className='btn' onClick={() => this.props.addTo(this.props.game)}>
+        <p>Note: {this.props.game.note}</p>
+        <button
+          className="btn"
+          onClick={() => this.props.addTo(this.props.game)}
+        >
           Add to Wish List
         </button>
-        <input className='input'
+        <input
+          className="input"
           onChange={e => this.handleChange2(e.target.value)}
-          placeholder="Add a note..."
+          placeholder="Write a note..."
         />
-        <button className='btn'
+        <button
+          className="btn"
           onClick={e => {
             this.handleSubmit(this.state.input, this.props.game);
           }}
         >
-          Add note...
+          Add note
         </button>
       </div>
     );

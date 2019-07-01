@@ -1,44 +1,51 @@
 .header {
-    width: 100vw;
-    height: 100px;
-    background: linear-gradient(-90deg, #1F487E 60%, #92BCEA 100%);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 3px solid white;
-  }
+  width: 100vw;
+  height: 100px;
+  background: linear-gradient(-90deg, #1f487e 60%, #92bcea 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid grey;
+}
 
-  .logo {
-    height: 100px;
-    align-items: center;
-    margin-right: 300px;
-  }
+.logo {
+  height: 100px;
+  align-items: center;
+  margin-right: 300px;
+}
 
-  .btn-container {
-      width: 40vw;
-      height: 70px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      
-  }
+.btn-container {
+  width: 40vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  .home-btn {
-    height: 50px;
-    font-size: 40px;
-    color: white;
-    background: #883677;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-  }
+.home-btn {
+  height: 50px;
+  font-size: 40px;
+  color: white;
+  background: #883677;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 15px;
+}
 
-  .wishlist-btn {
-    height: 50px;
-    font-size: 40px;
-    color:white;
-    background: #883677;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-  }
+.home-btn:active {
+  background: grey;
+}
+
+.wishlist-btn {
+  height: 50px;
+  font-size: 40px;
+  color: white;
+  background: #883677;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 15px;
+}
+
+.wishlist-btn:active {
+  background: grey;
+}

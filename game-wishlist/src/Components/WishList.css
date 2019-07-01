@@ -1,17 +1,16 @@
 .wishlist-container {
-    background: linear-gradient(#92BCEA, #1F487E );
-    width: 100vw;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    
+  background: linear-gradient(#92bcea, #1f487e);
+  width: 100vw;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .wishlist {
-    font-size: 50px;
-    color: #883677;
-    text-shadow: 3px 0 0 black;  
+  font-size: 50px;
+  color: #883677;
+  text-shadow: 3px 0 0 black;
 }

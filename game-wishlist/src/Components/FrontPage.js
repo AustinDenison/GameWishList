@@ -7,7 +7,6 @@ import "./WishList.css";
 import Header from "./Header";
 import Search from "./Search";
 
-
 class FrontPage extends Component {
   constructor() {
     super();
@@ -59,8 +58,8 @@ class FrontPage extends Component {
   updateGames = games => {
     this.setState({
       games
-    })
-  }
+    });
+  };
 
   handleView(view) {
     this.setState({
@@ -83,7 +82,10 @@ class FrontPage extends Component {
         {this.state.view === "Cards" ? (
           <div className="frontpage-cards-container">
             <h1 className="game-gallery">Game Gallery</h1>
-          <Search handleChange={this.handleChange} value={this.state.searched} />
+            <Search
+              handleChange={this.handleChange}
+              value={this.state.searched}
+            />
             <div className="games-container">
               {filtered.map(game => {
                 return (
