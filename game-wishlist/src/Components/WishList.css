@@ -12,5 +12,6 @@
 
 .wishlist {
     font-size: 50px;
-    color: #883677;  
+    color: #883677;
+    text-shadow: 3px 0 0 black;  
 }
